@@ -1,75 +1,70 @@
-<header>
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/3YVg2wK-)
+[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-2e0aaae1b6195c2367325f4f02e2d04e9abb55f0b24a779b69b11b9e10269abc.svg)](https://classroom.github.com/online_ide?assignment_repo_id=16018858&assignment_repo_type=AssignmentRepo)
+# Atividade 3
 
-<!--
-  <<< Author notes: Course header >>>
-  Include a 1280×640 image, course title in sentence case, and a concise description in emphasis.
-  In your repository settings: enable template repository, add your 1280×640 social image, auto delete head branches.
-  Add your open source license, GitHub uses MIT license.
--->
 
-# Introduction to GitHub
 
-_Get started using GitHub in less than an hour._
+## Sumário 
+- [Como Utilizar Esse Projteto](#como-utilizar-esse-projeto-)
+- [Desafio da Atividade](#desafio-da-atividade-)
+- [No Microsoft Teams](#no-microsoft-teams--)
+- [Regras](#regras-)
+- [Feedback](#feedback-)
 
-</header>
+## Como Utilizar Esse Projeto 📁
 
-<!--
-  <<< Author notes: Step 1 >>>
-  Choose 3-5 steps for your course.
-  The first step is always the hardest, so pick something easy!
-  Link to docs.github.com for further explanations.
-  Encourage users to open new tabs for steps!
--->
+- Nesse projeto há  pasta:
+    - FazerVsCode:Exclusiva para realizar no VisualStudio Code. 
 
-## Step 1: Create a branch
+- Na sua máquina tem que ter instalado o <a href="https://www.oracle.com/br/java/technologies/downloads/" target="_blank">Java Development Kit (JDK) </a> 
+- Caso utilize o VisualStudio Code é necessário que instale a <a href="https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack" target="_blank">Extension Pack for Java</a>
 
-_Welcome to "Introduction to GitHub"! :wave:_
 
-**What is GitHub?**: GitHub is a collaboration platform that uses _[Git](https://docs.github.com/get-started/quickstart/github-glossary#git)_ for versioning. GitHub is a popular place to share and contribute to [open-source](https://docs.github.com/get-started/quickstart/github-glossary#open-source) software.
-<br>:tv: [Video: What is GitHub?](https://www.youtube.com/watch?v=pBy1zgt0XPc)
+## Escopo da Atividade 🛠️
 
-**What is a repository?**: A _[repository](https://docs.github.com/get-started/quickstart/github-glossary#repository)_ is a project containing files and folders. A repository tracks versions of files and folders. For more information, see "[About repositories](https://docs.github.com/en/repositories/creating-and-managing-repositories/about-repositories)" from GitHub Docs.
+- Implementar uma classe que seja capaz de simular atuação dos modificadores de acesso e respectivamente os métodos getters/setters: 
+- Implemente a Classe Corpo Humano e o Construtor  
+- Implemente os métodos Getters
+- Implemente os métodos Setters
+- Implemente uma classe main que inclua as seguintes informações: Massa, Volume e Densidade
 
-**What is a branch?**: A _[branch](https://docs.github.com/en/get-started/quickstart/github-glossary#branch)_ is a parallel version of your repository. By default, your repository has one branch named `main` and it is considered to be the definitive branch. Creating additional branches allows you to copy the `main` branch of your repository and safely make any changes without disrupting the main project. Many people use branches to work on specific features without affecting any other parts of the project.
 
-Branches allow you to separate your work from the `main` branch. In other words, everyone's work is safe while you contribute. For more information, see "[About branches](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-branches)".
 
-**What is a profile README?**: A _[profile README](https://docs.github.com/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme)_ is essentially an "About me" section on your GitHub profile where you can share information about yourself with the community on GitHub.com. GitHub shows your profile README at the top of your profile page. For more information, see "[Managing your profile README](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme)".
+### Após essa implementação responda:
 
-![profile-readme-example](/images/profile-readme-example.png)
+- Na classe Corpo_Humano inclua a linha c1.massa = "2"; logo depois de instanciar o objeto c1. Qual foi a ocorrência? Qual a conclusão sobre o que aconteceu?
+<b>Resposta: Não foi possível porque estava privado e foi necessário usar um método setter.</b>
 
-### :keyboard: Activity: Your first branch
+- Na classe Corpo_Humano altere a linha private float Massa para public float Massa; Qual foi a ocorrência? Qual a conclusão sobre o que aconteceu?
+<b>Resposta: Depois dessa alteração foi possível acessar a variável sem instanciar o objeto.</b>
 
-1. Open a new browser tab and navigate to your newly made repository. Then, work on the steps in your second tab while you read the instructions in this tab.
-2. Navigate to the **< > Code** tab in the header menu of your repository.
+- Na classe Corpo_Humano altere a linha public setVolume (float volume) para private setVolume (float volume).Qual foi a ocorrência? Qual a conclusão sobre o que aconteceu?
+<b>Resposta: Não consegui utilizar o setter, sorte que eu tinha atribuido pelo constructor, no teste sem constructor não tinha como acessar pela classe App.</b>
 
-   ![code-tab](/images/code-tab.png)
 
-3. Click on the **main** branch drop-down.
+<b>Colocar essa informação no Readme do Git ou Em comentários de código na classe main </b>
 
-   ![main-branch-dropdown](/images/main-branch-dropdown.png)
 
-4. In the field, enter a name for your branch: `my-first-branch`.
-5. Click **Create branch: my-first-branch** to create your branch.
+## DESAFIO 🚀
 
-   ![create-branch-button](/images/create-branch-button.png)
+Implementar o Atributo e os Metodos de acesso para Altura;
+Criar um método para calcular o Indíce de Massa Corporal (IMC), sendo:
+IMC = Massa/Altura
+Exibir/Imprimir o IMC na classe main
 
-   The branch will automatically switch to the one you have just created.
-   The **main** branch drop-down bar will reflect your new branch and display the new branch name.
 
-6. Wait about 20 seconds then refresh this page (the one you're following instructions from). [GitHub Actions](https://docs.github.com/en/actions) will automatically update to the next step.
+## No Microsoft Teams  👥
 
-<footer>
+- Não há necessidade fazer o upload do projeto 
+- Caso tenha realizado em dupla, mencione o NOME e RGM da dupla lá no Teams em um arquivo .txt
 
-<!--
-  <<< Author notes: Footer >>>
-  Add a link to get support, GitHub status page, code of conduct, license link.
--->
+## Regras 📄
 
----
+- Utilize as boas práticas de programação que são sempre mencionadas em aula e nos materiais; 
+- Observe sempre os modificadores de acesso em atributos e métodos;
+- Observe os nomes de classes e atributos;
+- Utilze comentários para elucidar o cenário elaborado;
 
-Get help: [Post in our discussion board](https://github.com/skills/.github/discussions) &bull; [Review the GitHub status page](https://www.githubstatus.com/)
-
-&copy; 2023 GitHub &bull; [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) &bull; [MIT License](https://gh.io/mit)
-
-</footer>
+## Feedback 📨
+-  Sua atividade receberá uma pontuação de 0 a 10, que compõe a Nota de Atividades da M1;
+-  A nota será atribuída no Microsoft Teams
